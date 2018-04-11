@@ -1,3 +1,3 @@
 node {
-    powershell 'Write-Output "Hello, World!"'
+    powershell 'Get-ChildItem'
 }
