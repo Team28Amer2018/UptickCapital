@@ -1,3 +1,6 @@
 node {
-    powershell '$a = Get-ChildItem; $a | Out-String'
+    def stdout = powershell(returnStdout: true, script: '''
+      $a = Get-ChildItem; $a | Out-String
+    ''')
+    println stdout
 }
