@@ -1,3 +1,4 @@
 node {
-    powershell 'Get-ChildItem'
+    powershell '$a = Get-ChildItem'
+    powershell 'Write-Output $a'
 }
